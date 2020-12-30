@@ -9,7 +9,7 @@ This is a 3d printable jig for flashing SOIC-16 bios chip on Thinkpad X200 using
 It's made of 2 parts: base (aligns everything) and springs (keeps pins under tension).
 
 ### Print settings
-Printed with Prusa MK3 0.20 "quality" preset (extrusion width = 0.45), generic PLA.\
+Base is printed with Prusa MK3 0.20 "quality" preset (extrusion width = 0.45), generic PLA.\
 2 perimeters, no solid top/bottom layers. Infill is up to you.
 
 ## How to use
@@ -28,3 +28,6 @@ After installing the jig jumper wires will have following layout (top view):
 | GND  | CS   |
 | MOSI | VCC  |
 | CLK  |      |
+
+## Files
+Stl's are in same folder as this readme.
