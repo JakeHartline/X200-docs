@@ -1,6 +1,6 @@
 ![1](/pictures/2.jpg)
 # Overview on external flashing
-This breifly describes flashing process bios chip on Thinkpad X200 directly (not from a running OS).
+This breifly describes the flashing process of bios chip on Thinkpad X200 directly (not from a running OS).
 
 ## Prepare the programmer
 There are a few options when choosing a programmer. Those listed on libreboot.org use SoC of sorts, which is unnecessary. There are 2 better options:
@@ -26,14 +26,14 @@ git clone --recurse-submodules https://github.com/dword1511/stm32-vserprog.git
 cd stm32-vserprog
 make BOARD=stm32-bluepill
 ```
-Flash it using ST-link (ST-link is a programmer for stm devices) \
+Flash it using ST-link (ST-link is a programmer for stm devices)
 ```
 make BOARD=stm32-bluepill flash-stlink
 ```
 
 ## The clip
 I designed and used a 3d printed jig that would align and press jumper cables against chip pins. \
-It could really use a rework. [More here.](/jig/README.md)
+It could really use a rework. More [here.](/jig/README.md)
 
 ### Wiring
 [SOIC-16 legs](https://i.imgur.com/z2kbRml.png)
@@ -105,7 +105,7 @@ Congrats, you're done.
 
 ### About spispeed=512
 Writing to x200 is supposedly inconsistent. There is a [patch](https://notabug.org/libreboot/libreboot/src/master/projects/flashrom/patches/0002-Workaround-for-MX25-chips.patch) for flashrom to fix that.\
-However, with unmodified flashrom from my disto repos, I was able to read the default bios just fine. Writing worked with 1024 (possibly will work with higher speed, I didn't test).\
+However, with unmodified flashrom from my distro repos, I was able to read the default bios just fine. Writing worked with 1024 (possibly will work with higher speed, I didn't test).\
 Check flashrom manpage for more info on spispeed.\
 [Reddit post on the issue.](https://old.reddit.com/r/libreboot/comments/icvr6t/attempting_to_flash_x200_erase_functions_fail/)
 

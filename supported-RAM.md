@@ -10,7 +10,7 @@ Qimonda IMSH2GS13A1F1C-10F
 ## Doesn't work
 
 ### 4GB
-Hynix HMT451S6AFR8A-PB
+Hynix HMT451S6AFR8A-PB \
 Kingston KVR1333D3SO/4GR
 
 ## Additional resourses
